@@ -11,27 +11,18 @@
 <div>
 <h3>请点击下面的按钮完成查询</h3>
 <p class="clearfix">
+<div style="width:560px;text-align:center">
 <form name="form1" method="post" action="" class="formButton">
-<input name="" value="a" type="submit" />
-<input name="a" type="hidden" value="a" />
+<input name="a" value="学年成绩统计" type="submit" />
+<input name="a" value="名次排定" type="submit" />
+<input name="a" value="课程平均成绩" type="submit" />
+<input name="a" value="课程学分统计" type="submit" />
+<input name="a" value="学生成绩查询" type="submit" />
+<input name="a" value="教师任课查询" type="submit" />
+<input name="a" value="班级开课查询" type="submit" />
 </form>
-<form name="form2" method="post" action="" class="formButton">
-<input name="" value="b" type="submit" />
-<input name="a" type="hidden" value="b" />
-</form>
-<form name="form3" method="post" action="" class="formButton">
-<input name="" value="c" type="submit" />
-<input name="a" type="hidden" value="b" />
-</form>
-<form name="form4" method="post" action="" class="formButton">
-<input name="" value="d" type="submit" />
-<input name="a" type="hidden" value="b" />
-</form>
-<form name="form5" method="post" action="" class="formButton">
-<input name="" value="e" type="submit" />
-<input name="a" type="hidden" value="b" />
-</form>
-
+</div>
+<br />
 <?php
 require("query.php");
 ?>

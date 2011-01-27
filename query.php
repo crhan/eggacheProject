@@ -1,6 +1,6 @@
 <?php
 switch($_REQUEST["a"]){
-case "a":
+case "你好":
     echo "<p>haha</p>";
     break;
 case "b":
