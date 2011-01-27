@@ -1,12 +1,20 @@
 <?php
+unset($sql);
 switch($_REQUEST["a"]){
-case "你好":
-    echo "<p>haha</p>";
+case "学年成绩统计":
+    $sql="a";
     break;
-case "b":
+case "学生名次排定":
     echo"<p>hoho</p>";
     break;
 default:
     echo "<p>lala</p>";
+}
+
+echo "$sql";
+
+function querySQL($query)
+{
+
 }
 ?>
