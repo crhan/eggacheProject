@@ -28,7 +28,7 @@ require("query.php");
 </div>
 </div>
 <div id="footer">
-<p>2011 © <a href="http://crhan.info/">EGGACHE PROJECT</a></p>
+<p>2011 © <a href="https://github.com/crhan/eggacheProject">EGGACHE PROJECT</a></p>
 </div>
 </body>
 </html>
