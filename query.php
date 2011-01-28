@@ -91,10 +91,32 @@ case "学年成绩统计":
         ";
     querySQL($sql);
     break;
+case "专业注册":
+    if($_REQUEST["daihao"]!="" && $_REQUEST["zhuanyeming"]!=""){
+        $sql="insert into Crhan_Subject values('$_REQUEST[daihao]','$_REQUEST[zhuanyeming]')";
+        insertSQL($sql);
+    }
+    $sql="select * from Crhan_Subject";
+    echo "<table class='query'>
+        <tr>
+        <th>专业代号crh</th>
+        <th>专业名crh</th>
+        </tr>
+        ";
+    querySQL($sql);
+    break;
 default:
 }
 
-
+function insertSQL($query)
+{
+    $con=mysql_connect("localhost","phptest","phpTest");
+    mysql_select_db("phptest",$con);
+    mysql_query("SET NAMES 'UTF8'");
+    $result=mysql_query($query);
+    
+    mysql_close($con);
+}
 function querySQL($query)
 {
     $con=mysql_connect("localhost","phptest","phpTest");
