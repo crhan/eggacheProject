@@ -126,8 +126,9 @@ function querySQL($query)
 
     while($row=mysql_fetch_array($result)){
         echo "<tr>";
-        for($i=0;$i<=count($row)/2-1;$i++){
-        echo "<td>$row[$i]</td>";
+		foreach ($row as $key => $value){
+			if (is_int($key))
+				echo "<td>$value</td>";
         }
         echo "</tr>";
     }
